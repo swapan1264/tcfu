@@ -27,7 +27,7 @@ export default function ContactUs() {
               Give us a call or request a call back at a time that suits you.
             </p>
             <p className="text-lg">
-              We're available from{" "}
+              We&apos;re available from{" "}
               <strong>9:00am - 7:00pm, Monday to Saturday.</strong>
             </p>
           </div>

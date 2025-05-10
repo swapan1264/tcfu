@@ -39,12 +39,12 @@ export default function WelcomeMessage() {
             </p>
 
             <p className="mt-4 text-base sm:text-lg leading-relaxed">
-              My name is Adelaide Mosley, and it's both an honour and a
+              My name is Adelaide Mosley, and it&apos;s both an honour and a
               privilege to serve as the Director of Treasured Care For You. With
               a long-standing career in nursing and years of hands-on experience
-              as both a Registered Nurse and a support worker, I've witnessed
+              as both a Registered Nurse and a support worker, I&apos;ve witnessed
               firsthand the difference that genuine, person-centred care can
-              make in someone's life.
+              make in someone&apos;s life.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed">
               This organisation was built from the ground up with a deep
@@ -55,10 +55,10 @@ export default function WelcomeMessage() {
               indivual feels safe repected, and empowered.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed">
-              Whether you're with us through the NDIS or seeking aged care
+              Whether you&apos;re with us through the NDIS or seeking aged care
               support, know that you are at the heart of everything we do. Our
               dedicated team shares my passion and commitment to compassionate,
-              professional care - and we're here to support you every step of
+              professional care - and we&apos;re here to support you every step of
               the way.
             </p>
             <p className="mt-4 text-base sm:text-lg leading-relaxed">

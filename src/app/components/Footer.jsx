@@ -1,7 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import Link from "next/link";
-// import dummy from '/dummy.png';
 
 export default function Footer() {
   return (
