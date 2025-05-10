@@ -1,0 +1,22 @@
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import "./globals.css";
+
+export const metadata = {
+  title: 'Treasured Care For You',
+  description: 'Providing nurturing support and care services',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>
+        <Navbar />
+        <main className="min-h-screen">  {/* page content */}
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
