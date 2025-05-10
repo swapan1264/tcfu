@@ -1,14 +1,17 @@
-// import { useLocation } from "react-router-dom";
-import HeroSection from "./HeroSection";
+"use client";
 
+import React from 'react';
+import { usePathname } from "next/navigation";
+import HeroSection from './HeroSection';
 export default function VisionMission() {
    
-//   const location = useLocation();
+      const pathname = usePathname();
 
   return (
     <>
       {/* Render Hero only when on the /contact route */}
-      {/* {location.pathname === "/vision" && <HeroSection />} */}
+        {pathname === "/vision" && <HeroSection />}
+
       <section className="pt-16 bg-white-50 my-10 lg:mx-auto">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-4xl font-extrabold text-center mb-24 text-pink">Our Vision &amp; Mission</h2>

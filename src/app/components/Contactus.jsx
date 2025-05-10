@@ -1,15 +1,17 @@
-import React from "react";
-// import Hero from "../components/Hero";
-// import { useLocation } from "react-router-dom";
+"use client";
+
+import React from 'react';
+import { usePathname } from "next/navigation";
+import HeroSection from './HeroSection';
 
 export default function ContactUs() {
 
-//   const location = useLocation();
+      const pathname = usePathname();
 
   return (
     <>
-      {/* Render Hero only when on the /contact route */}
-      {/* {location.pathname === "/contact" && <Hero />} */}
+        {pathname === "/contact" && <HeroSection />}
+
           <h2 className="text-2xl md:text-4xl font-extrabold text-center py-4 text-pink">
           Contact Us
         </h2>

@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 "use client";
 
 import { useState } from "react";
@@ -12,7 +11,7 @@ const navLinks = [
   { title: "Home",     path: "/" },
   { title: "Vision Mission", path: "/vision" },
   { title: "Company Values", path: "/values" },
-  { title: "about", path: "/AboutSection" },
+  { title: "about", path: "/about" },
   { title: "Contact Us", path: "/contact" },
 ];
 

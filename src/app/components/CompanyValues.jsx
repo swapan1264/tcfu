@@ -1,7 +1,13 @@
-// import { useLocation } from "react-router-dom";
+"use client";
+
+import React from 'react';
+import { usePathname } from "next/navigation";
+import HeroSection from './HeroSection';
 
 export default function CompanyValues() {
 
+      const pathname = usePathname();
+    
     const values = [
       {
         title: "Personalised Care",
@@ -33,13 +39,11 @@ export default function CompanyValues() {
       },
     ];
   
- 
-//   const location = useLocation();
 
   return (
     <>
-      {/* Render Hero only when on the /contact route */}
-      {/* {location.pathname === "/values" && <Hero />} */}
+        {pathname === "/values" && <HeroSection />}
+
       <section className="py-16 bg-white my-10">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-4xl font-extrabold mb-16 text-center text-pink">Our Company Values</h2>
