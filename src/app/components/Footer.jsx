@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-pink text-white mt-16 rounded-b-none rounded-tl-[1rem] rounded-tr-[1rem] ">
+    <footer className="bg-pink text-white mt-32 rounded-b-none rounded-tl-[1rem] rounded-tr-[1rem] ">
       {/* Top links */}
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo */}

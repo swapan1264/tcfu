@@ -12,7 +12,7 @@ export default function AboutSection() {
     <>
         {pathname === "/about" && <HeroSection />}
     <section>
-    <h2 className="text-4xl md:text-4xl font-extrabold my-16 text-center text-pink">
+    <h2 className="text-4xl md:text-5xl font-extrabold my-16 text-center text-pink">
           About Us
         </h2>
       <div className="mx-4 lg:mx-8  px-4 py-8 rounded-xl shadow-md bg-pink">
