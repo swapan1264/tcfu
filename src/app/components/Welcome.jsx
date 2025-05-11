@@ -2,11 +2,11 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <h2 className="text-2xl md:text-4xl font-extrabold mb-8 text-center my-12 text-pink">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center my-16 text-pink">
         Welcome to Treasured Care
       </h2>
 
-      <section className="bg-pink max-w-6xl mx-4 lg:mx-auto my-12 rounded-2xl overflow-hidden flex flex-col lg:flex-row">
+      <section className="bg-pink max-w-6xl mx-4 lg:mx-auto rounded-2xl overflow-hidden flex flex-col lg:flex-row">
         {/* Left “cut-out” panel */}
         <div className="flex-1 relative flex items-start justify-center lg:justify-start p-8 lg:p-16">
           <div

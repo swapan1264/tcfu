@@ -11,8 +11,8 @@ export default function AboutSection() {
   return (
     <>
         {pathname === "/about" && <HeroSection />}
-    <section className="pb-16  bg-white-50 mt-10">
-    <h2 className="text-2xl md:text-4xl font-extrabold mb-8 text-center pb-16 text-pink">
+    <section>
+    <h2 className="text-4xl md:text-4xl font-extrabold my-16 text-center text-pink">
           About Us
         </h2>
       <div className="mx-4 lg:mx-8  px-4 py-8 rounded-xl shadow-md bg-pink">

@@ -12,14 +12,14 @@ export default function ContactUs() {
     <>
         {pathname === "/contact" && <HeroSection />}
 
-          <h2 className="text-2xl md:text-4xl font-extrabold text-center py-4 text-pink">
+          <h2 className="text-4xl md:text-5xl my-16 font-extrabold text-center text-pink">
           Contact Us
         </h2>
-    <section className="py-16 bg-pink text-white my-16 mx-4 lg:mx-8 rounded-3xl">
+    <section className="py-16 bg-pink text-white mx-4 lg:mx-8 rounded-3xl">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           {/* Left: Headline & copy */}
-          <div className="md:w-2/3 space-y-4" style={{ fontFamily: "Butler" }}>
+          <div className="md:w-2/3 space-y-4 ">
             <h2 className="text-4xl md:text-3xl font-semibold">
               Ready to move forward? Contact us now!
             </h2>
@@ -41,7 +41,7 @@ export default function ContactUs() {
       inline-block
       bg-transparent hover:bg-teal-500
       text-white
-      font-medium
+      font-extrabold
       text-center
       px-8 py-3
       rounded-full
@@ -59,7 +59,7 @@ export default function ContactUs() {
       inline-block
       bg-transparent hover:bg-teal-500
       text-white
-      font-medium
+      font-extrabold
       text-center
       px-8 py-3
       rounded-full

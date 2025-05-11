@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-pink text-white">
+    <footer className="bg-pink text-white mt-16 rounded-b-none rounded-tl-[1rem] rounded-tr-[1rem] ">
       {/* Top links */}
       <div className="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Logo */}
@@ -13,9 +13,9 @@ export default function Footer() {
             <img
               src= "./dummy.png"
               alt="Tcare for you"
-              className="h-16 w-auto mb-4 mx-auto"
+              className="h-32 w-auto mb-4 mx-auto"
             />
-            <span className="text-xl font-extrabold text-white">
+            <span className="text-3xl font-extrabold text-white">
               Treasured Care For You
             </span>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
       {/* Copyright & Links */}
       <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-center items-center text-sm text-white space-y-4 sm:space-y-0 ">
         <span className="text-center font-extrabold text-1xl">
-          © 2025 Tcare for you
+          © 2025 Treasured care for you
         </span>
       </div>
     </footer>

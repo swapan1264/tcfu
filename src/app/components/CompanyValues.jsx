@@ -44,16 +44,16 @@ export default function CompanyValues() {
     <>
         {pathname === "/values" && <HeroSection />}
 
-      <section className="py-16 bg-white my-10">
+      <section>
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-4xl font-extrabold mb-16 text-center text-pink">Our Company Values</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold my-16 text-center text-pink">Our Company Values</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {values.map((val) => (
               <div key={val.title} className="bg-pink rounded-xl shadow-md p-6 flex flex-col items-center">
                 <img
                   src={val.imgSrc}
                   alt={val.imgAlt}
-                  className="h-50 w-50 mb-4 object-contain"
+                  className="h-50 w-50 mb-4 shadow-lg object-contain"
                 />
                 <h3 className="text-2xl font-extrabold text-white mb-2">{val.title}</h3>
                 <p className="text-white leading-relaxed text-left">{val.description}</p>
