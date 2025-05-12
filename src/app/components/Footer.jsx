@@ -11,11 +11,11 @@ export default function Footer() {
         <Link href="/">
           <div className="col-span-1 flex flex-col items-center lg:items-start">
             <img
-              src= "./dummy.png"
+              src= "./logo.jpg"
               alt="Tcare for you"
               className="h-32 w-auto mb-4 mx-auto"
             />
-            <span className="text-3xl font-extrabold text-white">
+            <span className="text-3xl font-extrabold text-white text-center">
               Treasured Care For You
             </span>
           </div>
@@ -64,13 +64,13 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2">
             <li>
-              <a href="tel:+61411776984" className="hover:underline">
-                1234567890
+              <a href="tel:+610392679030" className="hover:underline">
+               +61 0392679030
               </a>
             </li>
             <li>
-              <a href="https://gmail.com" className="hover:underline">
-                xyz@gmail.com
+              <a href="mailto:Enquiries@treasuredcareforyou.com" className="hover:underline">
+                Enquiries@treasuredcareforyou.com
               </a>
             </li>
           </ul>

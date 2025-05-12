@@ -36,37 +36,39 @@ export default function ContactUs() {
           <div className="flex flex-col mx-auto my-3">
   {/* Call button */}
   <a
-    href="tel:+61411776984"
+    href="tel:+610392679030"
     className="
       inline-block
       bg-transparent hover:bg-teal-500
-      text-white
+      text-pink
       font-extrabold
-      text-center
-      px-8 py-3
+      bg-white
+      font-mono
+       p-3
       rounded-full
       transition-colors duration-200
     "
   >
-    Call +61 411 776 984
+    Call +61 0392679030
   </a>
 
   {/* Request callback button */}
   <a
-    href="https://gmail.com"
+    href="mailto:Enquiries@treasuredcareforyou.com"
     className="
       mt-2
       inline-block
       bg-transparent hover:bg-teal-500
-      text-white
+      text-pink
+      bg-white
+      font-mono
       font-extrabold
-      text-center
-      px-8 py-3
+      p-3
       rounded-full
       transition-colors duration-200
     "
   >
-    xyz@gmail.com
+    Enquiries@treasuredcareforyou.com
   </a>
 </div>
 

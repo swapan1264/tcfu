@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="font-serif">
         <Navbar />
-        <main className="min-h-screen">  {/* page content */}
+        <main className="min-h-screen pt-16">  {/* page content */}
           {children}
         </main>
         <Footer />

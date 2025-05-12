@@ -26,7 +26,7 @@ export default function Navbar() {
     setMobileMenuOpen(false);
   }, [pathname]);
   return (
-    <nav className="w-full bg-white py-4 shadow-lg z-20">
+    <nav className="w-full bg-white py-4 shadow-lg z-20 fixed rounded-t-none rounded-bl-[.5rem] rounded-br-[.5rem]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -37,17 +37,26 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex space-x-4">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              href={link.path}
-              className="text-black px-3 py-2 rounded-md text-lg font-medium transition-colors duration-200"
-            >
-              {link.title}
-            </NavLink>
-          ))}
-        </div>
+      <div className="hidden md:flex space-x-4">
+  {navLinks.map(link => {
+    const isActive = pathname === link.path;
+    return (
+      <NavLink
+        key={link.path}
+        href={link.path}
+        className={`
+          px-3 py-2 rounded-md text-lg transition-colors duration-200
+          ${isActive 
+             ? 'text-pink font-extrabold' 
+             : 'text-black font-medium hover:text-pink'
+          }
+        `}
+      >
+        {link.title}
+      </NavLink>
+    );
+  })}
+</div>
 
         {/* Mobile Toggle */}
         <button
@@ -71,31 +80,41 @@ export default function Navbar() {
       >
         <div className="fixed inset-0 bg-black/25" />
         <div className="fixed inset-0 flex">
-          <Dialog.Panel className="w-3/4 bg-pink p-4">
+          <Dialog.Panel className="w-3/4 bg-white p-4 shadow-lg">
             {/* 1️⃣ Mobile Logo & Title */}
-            <div className=" items-center mb-4">
+            <div className=" items-center mb-4 mt-16">
               {/* Make sure you have /public/logo.png or replace with your path */}
               <img
-                src="/dummy.png"
+                src="/logo.jpg"
                 alt="Logo"
                 width={120}
                 height={120}
                 className="mx-auto my-2"
               />
-              <span className="text-white text-xl font-semibold">
+              <span className="text-pink text-xl font-semibold">
                 Treasured Care For You
               </span>
             </div>
             <div className="space-y-1">
-              {navLinks.map((link) => (
-               <button
-                  key={link.path}
-                  onClick={() => router.push(link.path)}
-                  className="w-full text-left text-white hover:bg-white hover:text-pink px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                >
-                  {link.title}
-                </button>
-              ))}
+        {navLinks.map((link) => {
+  const isActive = pathname === link.path;
+  return (
+    <button
+      key={link.path}
+      onClick={() => router.push(link.path)}
+      className={`
+        w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200
+        ${isActive 
+           ? 'bg-pink text-white' 
+           : ' text-pink'
+        }
+      `}
+    >
+      {link.title}
+    </button>
+  );
+})}
+
             </div>
           </Dialog.Panel>
         </div>

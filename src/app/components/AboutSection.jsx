@@ -15,14 +15,14 @@ export default function AboutSection() {
     <h2 className="text-4xl md:text-5xl font-extrabold my-16 text-center text-pink">
           About Us
         </h2>
-      <div className="mx-4 lg:mx-8  px-4 py-8 rounded-xl shadow-md bg-pink">
+      <div className="mr-4 lg:mx-8  pr-4 py-8 rounded-xl shadow-md bg-pink">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Image side */}
           <div className="md:w-1/2">
             <img
-              src= "./dummy.png"
+              src= "./about1.jpg"
               alt="Supportive care illustration"
-              className="w-full rounded-xl shadow-lg object-cover"
+              className="w-full rounded-tl-none rounded-bl-none rounded-tr-[3rem] rounded-br-[3rem] shadow-lg object-cover p-4 bg-white"
             />
           </div>
 

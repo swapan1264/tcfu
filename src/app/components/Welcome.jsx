@@ -3,7 +3,7 @@ export default function WelcomeMessage() {
   return (
     <>
       <h2 className="text-3xl md:text-5xl font-extrabold text-center my-16 text-pink">
-        Welcome to Treasured Care
+        Welcome to Treasured Care for you
       </h2>
 
       <section className="bg-pink max-w-6xl mx-4 lg:mx-auto rounded-2xl overflow-hidden flex flex-col lg:flex-row">
@@ -69,11 +69,17 @@ export default function WelcomeMessage() {
 
           <div className="mt-4">
             <p className="text-xl font-semibold">Warm Regards,</p>
-            <p className="mt-2 text-2xl font-handwriting">Adelaide Mosley</p>
+              {/* Signature image here */}
+            <img
+              src="/sign.jpg"
+              alt="Adelaide Mosley Signature"
+              className="mt-2 w-48 md:w-72 h-auto"
+            />
+            {/* <p className="mt-2 text-2xl font-handwriting">Adelaide Mosley</p>
             <p className="mt-1 text-base uppercase tracking-wide">
               Director &amp; Founder
             </p>
-            <p className="text-sm text-white mt-1">Treasured Care For You</p>
+            <p className="text-sm text-white mt-1">Treasured Care For You</p> */}
           </div>
         </div>
       </section>
