@@ -26,12 +26,12 @@ export default function Navbar() {
     setMobileMenuOpen(false);
   }, [pathname]);
   return (
-    <nav className="w-full bg-white py-4 shadow-lg z-20 fixed rounded-t-none rounded-bl-[.5rem] rounded-br-[.5rem]">
+<nav className="w-full bg-white py-4 shadow-lg z-20 fixed top-0 rounded-t-none rounded-bl-[.5rem] rounded-br-[.5rem]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
-          className="text-black text-2xl font-bold tracking-tight transition-colors duration-200"
+          className="text-black text-xl md:text-2xl font-bold tracking-tight transition-colors duration-200"
         >
           Treasured Care For You
         </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
         <div className="fixed inset-0 flex">
           <Dialog.Panel className="w-3/4 bg-white p-4 shadow-lg">
             {/* 1️⃣ Mobile Logo & Title */}
-            <div className=" items-center mb-4 mt-16">
+            <div className="flex flex-col items-center mb-4 mt-16">
               {/* Make sure you have /public/logo.png or replace with your path */}
               <img
                 src="/logo.jpg"
@@ -91,7 +91,7 @@ export default function Navbar() {
                 height={120}
                 className="mx-auto my-2"
               />
-              <span className="text-pink text-xl font-semibold">
+              <span className="text-pink text-xl font-semibold text-center">
                 Treasured Care For You
               </span>
             </div>

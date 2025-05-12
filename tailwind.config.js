@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+        fontSize: {
+        'small-font': '0.9rem',  // Custom font size
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

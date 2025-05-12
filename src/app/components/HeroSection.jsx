@@ -9,7 +9,7 @@ export default function HeroSection() {
 // 1️⃣ Map each route to its heading **and** its image file
   const routeConfig = {
     '/': {
-      heading: 'Welcome to Treasured Care for you',
+      heading: 'Welcome to Treasured Care for you', 
       image: '/welcome.jpg',
     },
     '/vision': {
