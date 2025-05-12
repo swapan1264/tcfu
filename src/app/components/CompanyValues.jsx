@@ -53,7 +53,7 @@ export default function CompanyValues() {
                 <img
                   src={val.imgSrc}
                   alt={val.imgAlt}
-                  className="h-50 w-50 mb-4 shadow-lg object-contain p-4  "
+                  className="h-50 w-50 mb-4 shadow-lg object-contain p-4  bg-white rounded-full"
                 />
                 <h3 className="text-2xl font-extrabold text-white mb-2">{val.title}</h3>
                 <p className="text-white leading-relaxed text-left">{val.description}</p>
