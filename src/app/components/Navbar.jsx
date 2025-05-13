@@ -12,7 +12,7 @@ const navLinks = [
   { title: "Home", path: "/" },
   { title: "Vision Mission", path: "/vision" },
   { title: "Company Values", path: "/values" },
-  { title: "about", path: "/about" },
+  { title: "About", path: "/about" },
   { title: "Contact Us", path: "/contact" },
 ];
 
@@ -26,9 +26,8 @@ export default function Navbar() {
     setMobileMenuOpen(false);
   }, [pathname]);
   return (
-<nav className="w-full bg-white py-4 shadow-lg z-20 fixed top-0 rounded-t-none rounded-bl-[.5rem] rounded-br-[.5rem]">
+<nav className="w-full bg-white py-4 shadow-lg z-20 fixed top-0 rounded-t-none rounded-bl-[.5rem] rounded-br-[.5rem] font-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        {/* Logo */}
         <Link
           href="/"
           className="text-black text-xl md:text-2xl font-bold tracking-tight transition-colors duration-200"
@@ -45,10 +44,10 @@ export default function Navbar() {
         key={link.path}
         href={link.path}
         className={`
-          px-3 py-2 rounded-md text-lg transition-colors duration-200
+          px-3 py-2 rounded-md text-xl transition-colors duration-200
           ${isActive 
-             ? 'text-pink font-extrabold' 
-             : 'text-black font-medium hover:text-pink'
+             ? 'underline decoration-pink underline-offset-2 text-pink font-black ' 
+             : 'text-black font-semibold '
           }
         `}
       >
