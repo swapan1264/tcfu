@@ -57,11 +57,11 @@ export default function HeroSection() {
         }}
       >
         <div className="relative max-w-3xl mx-auto px-4 text-center text-white mt-0">
-          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold ">
+          <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold font-heading ">
            {heading}
           </h1>
-          <p className="mt-4 text-base sm:text-lg md:text-xl">
-            Where You Come First — Since 2025
+          <p className="mt-4 text-base sm:text-lg md:text-xl font-heading">
+            Where You Come First — Since 2024
           </p>
         </div>
       </section>
