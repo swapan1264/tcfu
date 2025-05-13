@@ -10,6 +10,10 @@ module.exports = {
         fontSize: {
         'small-font': '0.9rem',  // Custom font size
       },
+       fontFamily: {
+        heading: ['var(--font-montserrat)', 'sans-serif'],
+        body:    ['var(--font-lora)',       'serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
