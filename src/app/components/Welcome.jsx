@@ -2,7 +2,7 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <h2 className="text-3xl md:text-5xl font-extrabold text-center my-16 text-pink font-heading">
+      <h2 className="text-2xl md:text-5xl font-extrabold text-center my-16 px-4 text-pink font-heading">
         Welcome to Treasured Care for you
       </h2>
 
