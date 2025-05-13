@@ -2,7 +2,7 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <h2 className="text-3xl md:text-5xl font-extrabold text-center my-16 text-pink">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center my-16 text-pink font-heading">
         Welcome to Treasured Care for you
       </h2>
 
@@ -32,13 +32,13 @@ export default function WelcomeMessage() {
         {/* Right text panel */}
         <div className="flex-1 p-8 lg:p-16 text-white flex flex-col justify-between">
           <div>
-            <p className="mt-6 text-lg sm:text-xl font-extrabold max-w-prose leading-relaxed">
+            <p className="mt-6 text-lg sm:text-xl font-extrabold max-w-prose leading-relaxed font-heading">
               Welcome to Treasured Care For You – a place where care goes beyond
               the task, and every individual is seen, heard, and supported with
               dignity.
             </p>
 
-            <p className="mt-4 text-base sm:text-lg leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg leading-relaxed font-heading">
               My name is Adelaide Mosley, and it&apos;s both an honour and a
               privilege to serve as the Director of Treasured Care For You. With
               a long-standing career in nursing and years of hands-on experience
@@ -46,7 +46,7 @@ export default function WelcomeMessage() {
               firsthand the difference that genuine, person-centred care can
               make in someone&apos;s life.
             </p>
-            <p className="mt-4 text-base sm:text-lg leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg leading-relaxed font-heading">
               This organisation was built from the ground up with a deep
               understanding of what quality suppoprt truly looks like - not just
               from a clinical perspective, but from a human one. We are here not
@@ -54,14 +54,14 @@ export default function WelcomeMessage() {
               foster independence, and create an environment where every
               indivual feels safe repected, and empowered.
             </p>
-            <p className="mt-4 text-base sm:text-lg leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg leading-relaxed font-heading">
               Whether you&apos;re with us through the NDIS or seeking aged care
               support, know that you are at the heart of everything we do. Our
               dedicated team shares my passion and commitment to compassionate,
               professional care - and we&apos;re here to support you every step of
               the way.
             </p>
-            <p className="mt-4 text-base sm:text-lg leading-relaxed">
+            <p className="mt-4 text-base sm:text-lg leading-relaxed font-heading">
               Thank you for choosing Treasured Care For You. We look forward to
               walking alongside you on your journey
             </p>
