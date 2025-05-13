@@ -46,7 +46,7 @@ export default function CompanyValues() {
 
       <section>
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-extrabold my-16 text-center text-pink">Our Company Values</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold my-16 text-center text-pink font-heading">Our Company Values</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {values.map((val) => (
               <div key={val.title} className="bg-pink rounded-xl shadow-md pt-0 p-6 flex flex-col items-center">
@@ -55,8 +55,8 @@ export default function CompanyValues() {
                   alt={val.imgAlt}
                   className="h-50 w-50 mb-4 shadow-lg object-contain p-4  bg-white rounded-full"
                 />
-                <h3 className="text-2xl font-extrabold text-white mb-2">{val.title}</h3>
-                <p className="text-white leading-relaxed text-left">{val.description}</p>
+                <h3 className="text-2xl font-extrabold text-white mb-2 font-heading">{val.title}</h3>
+                <p className="text-white leading-relaxed text-left font-heading">{val.description}</p>
               </div>
             ))}
           </div>
