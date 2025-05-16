@@ -2,7 +2,7 @@
 export default function WelcomeMessage() {
   return (
     <>
-      <h2 className="text-2xl md:text-5xl font-extrabold text-center my-16 px-4 text-pink font-heading">
+      <h2 className="text-2xl md:text-5xl font-extrabold text-center my-16 px-4 text-pink font-heading ">
         Welcome to Treasured Care for you
       </h2>
 
@@ -11,28 +11,29 @@ export default function WelcomeMessage() {
         <div className="flex-1 relative flex items-start justify-center lg:justify-start p-8 lg:p-16">
           <div
             className="
-            w-64 h-64 sm:w-96 sm:h-96 
+            w-64 h-80 sm:w-96 sm:h-96 
             bg-white 
             rounded-t-none 
             rounded-bl-[10rem] rounded-br-[10rem] 
             overflow-hidden 
             -mt-16 
             shadow-lg
-            p-8
+            
           "
           >
             <img
-              src="./dummy.png"
+              src="./amosley.jpg"
               alt="Adelaide Mosley"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full p-4 pt-0 rounded-t-none 
+            rounded-bl-[10rem] rounded-br-[10rem] "
             />
           </div>
         </div>
 
         {/* Right text panel */}
-        <div className="flex-1 p-8 lg:p-16 text-white flex flex-col justify-between">
+        <div className="flex-1 p-8 pt-0 lg:p-16 text-white flex flex-col justify-between">
           <div>
-            <p className="mt-6 text-lg sm:text-xl font-extrabold max-w-prose leading-relaxed font-heading">
+            <p className="mt-0 text-lg sm:text-xl font-extrabold max-w-prose leading-relaxed font-heading">
               Welcome to Treasured Care For You – a place where care goes beyond
               the task, and every individual is seen, heard, and supported with
               dignity.
